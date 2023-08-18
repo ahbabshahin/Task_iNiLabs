@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Crud extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'title',
+        'desc',
+        'attachment'
+    ];
 }

@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('cruds', function (Blueprint $table) {
             $table->id();
+            $table->string('title', '255');
+            $table->string('desc', '1000');
+            $table->string('attachment')->nullable();
             $table->timestamps();
         });
     }
