@@ -10,17 +10,17 @@ const router = createRouter({
 			component: HomeView,
 		},
 		{
-			path: '/index',
+			path: '/cruds',
 			name: 'index',
 			component: () => import('../views/Index.vue'),
 		},
 		{
-			path: '/create',
+			path: '/cruds/create',
 			name: 'Create',
 			component: () => import('../views/Create.vue'),
 		},
 		{
-			path: '/:id/edit',
+			path: '/cruds/:id/edit',
 			name: 'edit',
 			component: () => import('../views/Edit.vue'),
 		},
