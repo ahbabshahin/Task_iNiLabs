@@ -18,7 +18,7 @@ class CrudResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'desc' => $this->desc,
-            'attachment' => $this->attachment
+            // 'attachment' => $this->attachment
         ];
     }
 }

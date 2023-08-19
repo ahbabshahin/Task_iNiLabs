@@ -24,7 +24,7 @@ class UpdateRequest extends FormRequest
         return [
             'title' => ['string', 'max:255'],
             'desc' => ['string', 'max:1000'],
-            'attachment' => ['sometimes', 'file', 'mimes:png,jpg,jpeg,pdf']
+            // 'attachment' => ['sometimes', 'file', 'mimes:png,jpg,jpeg,pdf']
         ];
     }
 }
