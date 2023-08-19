@@ -11,6 +11,6 @@ class Crud extends Model
     protected $fillable = [
         'title',
         'desc',
-        'attachment'
+        // 'attachment'
     ];
 }

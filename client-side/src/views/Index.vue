@@ -26,7 +26,7 @@ onMounted(() => getCruds());
 					<tr>
 						<th scope="col" class="px-6 py-3">Title</th>
 						<th scope="col" class="px-6 py-3">Description</th>
-						<th scope="col" class="px-6 py-3">Attachment</th>
+						<!-- <th scope="col" class="px-6 py-3">Attachment</th> -->
 						<th scope="col" class="px-6 py-3">Actions</th>
 					</tr>
 				</thead>
@@ -38,7 +38,7 @@ onMounted(() => getCruds());
 					>
 						<td class="px-6 py-4">{{ crud.title }}</td>
 						<td class="px-6 py-4">{{ crud.desc }}</td>
-						<td class="px-6 py-4">{{ crud.attachment }}</td>
+						<!-- <td class="px-6 py-4">{{ crud.attachment }}</td> -->
 						<td class="px-6 py-4 space-x-2">
 							<RouterLink
 								:to="{

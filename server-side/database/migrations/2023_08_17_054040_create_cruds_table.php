@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title', '255');
             $table->string('desc', '1000');
-            $table->string('attachment')->nullable();
+            // $table->string('attachment')->nullable();
             $table->timestamps();
         });
     }
