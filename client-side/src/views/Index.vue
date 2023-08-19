@@ -1,5 +1,5 @@
 <script setup>
-import useCruds from '../../composables/crud';
+import useCruds from '../assets/composables/crud';
 import { onMounted } from 'vue';
 
 const { cruds, getCruds, destroyCrud } = useCruds();

@@ -11,7 +11,7 @@ const router = createRouter({
 		},
 		{
 			path: '/cruds',
-			name: 'index',
+			name: 'Index',
 			component: () => import('../views/Index.vue'),
 		},
 		{
@@ -21,7 +21,7 @@ const router = createRouter({
 		},
 		{
 			path: '/cruds/:id/edit',
-			name: 'edit',
+			name: 'Edit',
 			component: () => import('../views/Edit.vue'),
 		},
 	],

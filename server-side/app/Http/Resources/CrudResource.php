@@ -15,9 +15,10 @@ class CrudResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'title',
-            'desc',
-            'attachment'
+            'id' => $this->id,
+            'title' => $this->title,
+            'desc' => $this->desc,
+            'attachment' => $this->attachment
         ];
     }
 }

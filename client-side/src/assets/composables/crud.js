@@ -13,9 +13,11 @@ export default function useCruds() {
 	const getCruds = async () => {
 		const res = await axios.get('cruds');
 		cruds.value = res.data.data;
+		console.log(res.data.data);
 	};
 
 	const getCrud = async (id) => {
+		// console.log(id);
 		const res = await axios.get('cruds/' + id);
 		crud.value = res.data.data;
 	};
@@ -32,6 +34,7 @@ export default function useCruds() {
 	};
 
 	const updateCrud = async (id) => {
+		console.log(id);
 		try {
 			await axios.put('cruds/' + id, crud.value);
 			await router.push({ name: 'Index' });

@@ -1,6 +1,6 @@
 <script setup>
 import { reactive } from 'vue';
-import useCruds from '../../composables/crud';
+import useCruds from '../assets/composables/crud';
 
 const { storeCrud, errors } = useCruds();
 
@@ -56,7 +56,7 @@ const form = reactive({
 					}}</span>
 				</div>
 
-				<div class="mb-6">
+				<!-- <div class="mb-6">
 					<label
 						for="attachment"
 						class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -72,7 +72,7 @@ const form = reactive({
 					<span class="text-sm text-red-400">{{
 						errors.attachment[0]
 					}}</span>
-				</div>
+				</div> -->
 
 				<div class="mt-4">
 					<button
